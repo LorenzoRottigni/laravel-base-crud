@@ -14,7 +14,7 @@ class CreateComicsTable extends Migration
     public function up()
     {
         Schema::create('comics', function (Blueprint $table) {
-            $table->bigIncrements('c_id'); #auto increment field
+            $table->bigIncrements('id'); #auto increment field
             $table->string('c_title');#string field
             $table->longText('c_description');#enum field with options all countries in config/_countryesArray.php
             $table->string('c_thumb');#float field
