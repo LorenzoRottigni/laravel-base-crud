@@ -8,24 +8,30 @@
   <meta name="description" content="Descrizione del mio sito">
   <title>@yield('page_title')</title>
   @include('partials.__header_scripts')
+  <style>
+      body{
+          height: 100vh;
+      }
+
+  </style>
 </head>
 
-<body>
+<body class="d-flex flex-column">
     <header>
         <ul class="list-unstyled mb-0 d-flex justify-content-center gap-3 py-5">
-            <li><a href="/comics">Index</a></li>
-            <li><a href="/">Create</a></li>
+            <li><a href="{{route('comics.index')}}">Index</a></li>
+            <li><a href="/comics/create">Create</a></li>
             <li><a href="/">Store</a></li>
             <li><a href="/">edit</a></li>
-            <li><a href="/comics/2">show</a></li>
+            <li><a href="{{route('comics.index')}}">show</a></li>
             <li><a href="/">update</a></li>
             <li><a href="/">destroy</a></li>
         </ul>
     </header>
-    <main class="main">
+    <main class="main flex-grow-1 overflow d-flex align-items-center justify-content-center flex-wrap">
         @yield('content')
     </main>
-    <footer>Comics footer</footer>
+    <footer class="bg-primary text-white text-center py-4"> <h5 class="mb-0">Designed with &hearts; by Lorenzo Rottigni</h6></footer>
 </body>
 
 </html>

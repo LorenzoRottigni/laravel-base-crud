@@ -19,6 +19,9 @@
                         <h6 class="bg-primary text-white p-1 rounded">{{$comic->c_type}}</h6>
                     </div>
                 </div>
+                <div class="text-center mt-3">
+                    <a href="{{route('comics.index')}}" class="">Home</a>
+                </div>
             </div>
         </div>
     </div>
