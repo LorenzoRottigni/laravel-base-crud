@@ -2,7 +2,7 @@
 
 <form method="GET" id="show-form">
     <div class="input-group mb-5 w-100">
-            <span class="input-group-text bg-primary text-white" id="inputGroup-sizing-default">Search by ID</span>
+            <span class="input-group-text bg-primary text-white" id="inputGroup-sizing-default">Comics ID</span>
             <input type="number" class="form-control" placeholder="0" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
             <button id="search-button" class="btn btn-primary">Search</button>
             <button id="edit-button" class="btn btn-outline-primary">Edit</button>
