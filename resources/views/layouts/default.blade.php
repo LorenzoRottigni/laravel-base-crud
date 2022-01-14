@@ -21,11 +21,6 @@
         <ul class="list-unstyled mb-0 d-flex justify-content-center gap-3 py-5">
             <li><a href="{{route('comics.index')}}">Index</a></li>
             <li><a href="/comics/create">Create</a></li>
-            <li><a href="/">Store</a></li>
-            <li><a href="/">edit</a></li>
-            <li><a href="{{route('comics.index')}}">show</a></li>
-            <li><a href="/">update</a></li>
-            <li><a href="/">destroy</a></li>
         </ul>
     </header>
     <main class="main flex-grow-1 overflow d-flex align-items-center justify-content-center flex-wrap">
